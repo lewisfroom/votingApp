@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Voting</title>
+      <link rel="stylesheet" href="../css/style.css"/>
+   </head>
+
+   <body>
+
+    <div class="container" id="logoContainer">
+         <a href="../"><img src="../img/clementine_150.png" /></a>
+         <p>Voting Test</p>
+         <a href="../add">Add a new poll</a>
+   </div>
+   <div id="listSection">
+      <div class="container mainContainer">
+         <h1>Polls</h1>
+         <ul id="pollList">
+         </ul>
+      </div>
+   </div>
+   <div id="addSection">
+      <div class="container mainContainer">
+         <br />
+         <div class="btn-container">
+            <h3 class="formInput">Poll Question</h4>
+            <input type="text" style="width: 370px; padding: 10px; font-size: 20px;"name="question"></input><br/>
+            <h3 class="formInput">Poll Options <a class="smallText">(Each option on a new line)</a></h4>
+            <textarea name="options" rows="10" cols="50"></textarea><br/>
+            <button type="submit" class="submitButton" id="addSubmit">Add Poll</button>
+         </div>
+      </div>
+   </div>
+   <div id="pollSection"> 
+      <div class="container mainContainer">
+         <div id="pollForm">
+            <h1 id="questionTitle">Title</h1>
+            <select id="pollOptions">
+      
+            </select>
+            <input type="submit" value="Vote!" id="pollSubmit" class="submitButton"></input>
+         </div>
+         <div id="pollResults">
+            <h1>Results</h1>
+            <ul id="resultsList">
+               
+            </ul>
+            <div style="width: 400px; height: 400px;" id="chartContainer"><canvas id="myChart" width="400" height="400"></canvas></div>
+         </div>
+      </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" integrity="sha256-aUydBd3D3p3+5tVJXERlqMtoCej+p4tdD+dkJgeRWNU=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="/controllers/clickController.client.js"></script>
+   </body>
+</html>
